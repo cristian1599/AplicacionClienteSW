@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle-webservice-clients xmlns:ns0="http://java.sun.com/xml/ns/javaee">
+   <webservice-client>
+      <service-qname namespaceURI="http://serviciosWeb/" localpart="ServicioHistorialClinicoSW"/>
+      <port-info>
+         <wsdl-port namespaceURI="http://serviciosWeb/" localpart="HistorialClinicoSWPort"/>
+         <runtime/>
+         <operations>
+            <operation name="buscarHistorialSolo"/>
+            <operation name="listarHistorial"/>
+            <operation name="agregarHistorial"/>
+            <operation name="buscarHistorial"/>
+            <operation name="listarHistorialPorParametro"/>
+            <operation name="modificarHistorial"/>
+            <operation name="eliminarHistorial"/>
+         </operations>
+      </port-info>
+   </webservice-client>
+</oracle-webservice-clients>

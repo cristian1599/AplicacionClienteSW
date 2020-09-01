@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle-webservice-clients xmlns:ns0="http://java.sun.com/xml/ns/javaee">
+   <webservice-client>
+      <service-qname namespaceURI="http://serviciosWeb/" localpart="ServicioPacienteSW"/>
+      <port-info>
+         <wsdl-port namespaceURI="http://serviciosWeb/" localpart="PacienteSWPort"/>
+         <runtime/>
+         <operations>
+            <operation name="agregarPaciente"/>
+            <operation name="eliminarPaciente"/>
+            <operation name="listar"/>
+            <operation name="buscarPaciente"/>
+            <operation name="modificarPaciente"/>
+            <operation name="listarPorParametro"/>
+         </operations>
+      </port-info>
+   </webservice-client>
+</oracle-webservice-clients>

@@ -1,0 +1,8 @@
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+  <system systemId="http://192.168.1.70:7101/AplicacionServidorHospitalSW-ProyectoServidorHospitalSW-context-root/PacienteSWPort?WSDL#%7Bhttp%3A%2F%2FserviciosWeb%2F%7DServicioPacienteSW"
+          uri="../serviciosweb/ServicioPacienteSW.wsdl"/>
+  <system systemId="http://192.168.1.70:7101/AplicacionServidorHospitalSW-ProyectoServidorHospitalSW-context-root/HistorialClinicoSWPort?WSDL#%7Bhttp%3A%2F%2FserviciosWeb%2F%7DServicioHistorialClinicoSW"
+          uri="../serviciosweb/ServicioHistorialClinicoSW.wsdl"/>
+  <system systemId="http://192.168.1.70:7101/AplicacionServidorHospitalSW-ProyectoServidorHospitalSW-context-root/ServicioEnfermedadSWPort?WSDL#%7Bhttp%3A%2F%2FserviciosWeb%2F%7DServicioEnfermedadSW"
+          uri="../serviciosweb/ServicioEnfermedadSW.wsdl"/>
+</catalog>

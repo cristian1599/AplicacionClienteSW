@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<definitions xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://serviciosWeb/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://serviciosWeb/" name="ServicioHistorialClinicoSW">
+  <types>
+    <xsd:schema>
+      <xsd:import namespace="http://serviciosWeb/" schemaLocation="HistorialClinicoSWPort1.xsd"/>
+    </xsd:schema>
+  </types>
+  <message name="buscarHistorialSolo">
+    <part name="parameters" element="tns:buscarHistorialSolo"/>
+  </message>
+  <message name="buscarHistorialSoloResponse">
+    <part name="parameters" element="tns:buscarHistorialSoloResponse"/>
+  </message>
+  <message name="listarHistorial">
+    <part name="parameters" element="tns:listarHistorial"/>
+  </message>
+  <message name="listarHistorialResponse">
+    <part name="parameters" element="tns:listarHistorialResponse"/>
+  </message>
+  <message name="agregarHistorial">
+    <part name="parameters" element="tns:agregarHistorial"/>
+  </message>
+  <message name="agregarHistorialResponse">
+    <part name="parameters" element="tns:agregarHistorialResponse"/>
+  </message>
+  <message name="buscarHistorial">
+    <part name="parameters" element="tns:buscarHistorial"/>
+  </message>
+  <message name="buscarHistorialResponse">
+    <part name="parameters" element="tns:buscarHistorialResponse"/>
+  </message>
+  <message name="listarHistorialPorParametro">
+    <part name="parameters" element="tns:listarHistorialPorParametro"/>
+  </message>
+  <message name="listarHistorialPorParametroResponse">
+    <part name="parameters" element="tns:listarHistorialPorParametroResponse"/>
+  </message>
+  <message name="modificarHistorial">
+    <part name="parameters" element="tns:modificarHistorial"/>
+  </message>
+  <message name="modificarHistorialResponse">
+    <part name="parameters" element="tns:modificarHistorialResponse"/>
+  </message>
+  <message name="eliminarHistorial">
+    <part name="parameters" element="tns:eliminarHistorial"/>
+  </message>
+  <portType name="HistorialClinicoSW">
+    <operation name="buscarHistorialSolo">
+      <input wsam:Action="http://serviciosWeb/HistorialClinicoSW/buscarHistorialSoloRequest" message="tns:buscarHistorialSolo"/>
+      <output wsam:Action="http://serviciosWeb/HistorialClinicoSW/buscarHistorialSoloResponse" message="tns:buscarHistorialSoloResponse"/>
+    </operation>
+    <operation name="listarHistorial">
+      <input wsam:Action="http://serviciosWeb/HistorialClinicoSW/listarHistorialRequest" message="tns:listarHistorial"/>
+      <output wsam:Action="http://serviciosWeb/HistorialClinicoSW/listarHistorialResponse" message="tns:listarHistorialResponse"/>
+    </operation>
+    <operation name="agregarHistorial">
+      <input wsam:Action="http://serviciosWeb/HistorialClinicoSW/agregarHistorialRequest" message="tns:agregarHistorial"/>
+      <output wsam:Action="http://serviciosWeb/HistorialClinicoSW/agregarHistorialResponse" message="tns:agregarHistorialResponse"/>
+    </operation>
+    <operation name="buscarHistorial">
+      <input wsam:Action="http://serviciosWeb/HistorialClinicoSW/buscarHistorialRequest" message="tns:buscarHistorial"/>
+      <output wsam:Action="http://serviciosWeb/HistorialClinicoSW/buscarHistorialResponse" message="tns:buscarHistorialResponse"/>
+    </operation>
+    <operation name="listarHistorialPorParametro">
+      <input wsam:Action="http://serviciosWeb/HistorialClinicoSW/listarHistorialPorParametroRequest" message="tns:listarHistorialPorParametro"/>
+      <output wsam:Action="http://serviciosWeb/HistorialClinicoSW/listarHistorialPorParametroResponse" message="tns:listarHistorialPorParametroResponse"/>
+    </operation>
+    <operation name="modificarHistorial">
+      <input wsam:Action="http://serviciosWeb/HistorialClinicoSW/modificarHistorialRequest" message="tns:modificarHistorial"/>
+      <output wsam:Action="http://serviciosWeb/HistorialClinicoSW/modificarHistorialResponse" message="tns:modificarHistorialResponse"/>
+    </operation>
+    <operation name="eliminarHistorial">
+      <input wsam:Action="http://serviciosWeb/HistorialClinicoSW/eliminarHistorial" message="tns:eliminarHistorial"/>
+    </operation>
+  </portType>
+  <binding name="HistorialClinicoSWPortBinding" type="tns:HistorialClinicoSW">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <operation name="buscarHistorialSolo">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="listarHistorial">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="agregarHistorial">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="buscarHistorial">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="listarHistorialPorParametro">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="modificarHistorial">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="eliminarHistorial">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+    </operation>
+  </binding>
+  <service name="ServicioHistorialClinicoSW">
+    <port name="HistorialClinicoSWPort" binding="tns:HistorialClinicoSWPortBinding">
+      <soap:address location="http://192.168.1.70:7101/AplicacionServidorHospitalSW-ProyectoServidorHospitalSW-context-root/HistorialClinicoSWPort"/>
+    </port>
+  </service>
+</definitions>

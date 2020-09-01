@@ -1,0 +1,147 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<jdevws:WebServiceProxy xmlns:jdevws="http://xmlns.oracle.com/jdeveloper/10130/webserviceproxy">
+   <list n="CHILD_NODES">
+      <url path="ServicioEnfermedadSW_Service.xml"/>
+      <url path="ServicioEnfermedadSW.wsdl"/>
+      <url path="ServicioEnfermedadSWPort1.xsd"/>
+      <url path="AgregarEnfermedadResponse.java"/>
+      <url path="ListarEnfermedadesResponse.java"/>
+      <url path="ServicioEnfermedadSW_Service.java"/>
+      <url path="package-info.java"/>
+      <url path="ServicioEnfermedadSWPortClient.java"/>
+      <url path="ListarEnfermedades.java"/>
+      <url path="ObjectFactory.java"/>
+      <url path="ServicioEnfermedadSW.java"/>
+      <url path="AgregarEnfermedad.java"/>
+      <url path="Enfermedad.java"/>
+   </list>
+   <hash n="DATA_MODEL">
+      <value n="ATTACHMENT_ENCODING" v="MIME"/>
+      <list n="LOCAL_FILES"/>
+      <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.WebServiceProxy"/>
+      <url n="ORACLE_WEBSERVICES_XML" path="ServicioEnfermedadSW_Service.xml"/>
+      <hash n="PROPERTY_GROUPS">
+         <hash n="WSDL_TO_JAVA_PROPERTIES">
+            <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.WSDLToJavaProperties"/>
+         </hash>
+      </hash>
+      <value n="PROXY_ASYNC_METHODS" v="FOR_NONE"/>
+      <list n="PROXY_CLIENTS">
+         <url path="ServicioEnfermedadSWPortClient.java"/>
+      </list>
+      <value n="PROXY_MAPPING_URL"/>
+      <url n="PROXY_ORIGINAL_WSDL_URL" protocol="http" host="192.168.1.70" port="7101" path="/AplicacionServidorHospitalSW-ProyectoServidorHospitalSW-context-root/ServicioEnfermedadSWPort" query="WSDL"/>
+      <hash n="PROXY_PORTS">
+         <hash n="ServicioEnfermedadSWPort">
+            <value n="ACCESSES_DOC_WRAPPPED" v="true"/>
+            <value n="ACCESSES_RPC_ENCODED" v="false"/>
+            <value n="CLASS_NAME" v="serviciosweb.ServicioEnfermedadSW"/>
+            <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyPort"/>
+            <value n="NAME" v="ServicioEnfermedadSWPort"/>
+            <hash n="OPERATIONS">
+               <hash n="agregarEnfermedad">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash n="listarEnfermedades">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+            </hash>
+            <hash n="PROPERTY_GROUPS">
+               <hash n="WS_POLICY">
+                  <value n="addressing"/>
+                  <hash n="GLOBAL_CONFIG_PROPERTIES"/>
+                  <list n="management"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.policy.PolicyClientModel"/>
+                  <value n="mtom"/>
+                  <hash n="POLICY_OVERRIDE_PROPERTIES"/>
+                  <list n="security"/>
+                  <list n="wsconfig"/>
+                  <value n="wsrm"/>
+               </hash>
+            </hash>
+            <url n="PROXY_ORIGINAL_PORT_ENDPOINT" protocol="http" host="192.168.1.70" port="7101" path="/AplicacionServidorHospitalSW-ProyectoServidorHospitalSW-context-root/ServicioEnfermedadSWPort"/>
+         </hash>
+      </hash>
+      <value n="PROXY_SERVICE_NAME" v="ServicioEnfermedadSW"/>
+      <value n="PROXY_SERVICE_NAMESPACE" v="http://serviciosWeb/"/>
+      <url n="PROXY_TARGET_PROJECT" path="../../ProyectoClienteHospitalSW.jpr"/>
+      <list n="PROXY_WSDL_IMPORT_LIST">
+         <url path="ServicioEnfermedadSWPort1.xsd"/>
+      </list>
+      <url n="PROXY_WSDL_URL" path="ServicioEnfermedadSW.wsdl"/>
+      <hash n="REFERENCED_WEBSERVICE">
+         <list n="BD_">
+            <hash>
+               <value n="BOUND_PORT_TYPE" v="{http://serviciosWeb/}ServicioEnfermedadSW"/>
+               <value n="DEFAULT_NAME" v="false"/>
+               <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPBinding"/>
+               <value n="NAME" v="{http://serviciosWeb/}ServicioEnfermedadSWPortBinding"/>
+               <list n="OP_BINDINGS">
+                  <hash>
+                     <value n="BOUND_OPERATION" v="int.agregarEnfermedad.serviciosweb.Enfermedad"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="java.util.List&lt;java.lang.Object>.listarEnfermedades"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+               </list>
+               <hash n="PROPERTY_GROUPS"/>
+            </hash>
+         </list>
+         <list n="BINDING_FILES"/>
+         <value n="GUID" v="42deb63c-0174-1000-8107-c0a80146fddc"/>
+         <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.WebServiceProxy$ProxyJavaWebService"/>
+         <list n="PO_">
+            <hash>
+               <value n="DEFAULT_NAME" v="false"/>
+               <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPPort"/>
+               <value n="NAME" v="ServicioEnfermedadSWPort"/>
+               <value n="PORT_BINDING_NAME" v="{http://serviciosWeb/}ServicioEnfermedadSWPortBinding"/>
+               <list n="PORT_OPS">
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="int.agregarEnfermedad.serviciosweb.Enfermedad"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="java.util.List&lt;java.lang.Object>.listarEnfermedades"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+               </list>
+               <hash n="PROPERTY_GROUPS"/>
+               <url n="URL" protocol="http" host="192.168.1.70" port="7101" path="/AplicacionServidorHospitalSW-ProyectoServidorHospitalSW-context-root/ServicioEnfermedadSWPort"/>
+            </hash>
+         </list>
+         <hash n="PROPERTY_GROUPS">
+            <hash n="WSDL_TO_JAVA_PROPERTIES">
+               <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.WSDLToJavaProperties"/>
+            </hash>
+         </hash>
+         <list n="PT_">
+            <hash>
+               <value n="AUTO_SERVICE_INTERFACE"/>
+               <value n="DEFAULT_NAME" v="false"/>
+               <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaPortType"/>
+               <value n="NAME" v="{http://serviciosWeb/}ServicioEnfermedadSW"/>
+               <hash n="PROPERTY_GROUPS"/>
+               <value n="PT_CLASS" v="serviciosweb.ServicioEnfermedadSWImpl"/>
+               <value n="PT_SERVICE_INTERFACE" v="serviciosweb.ServicioEnfermedadSW"/>
+               <value n="PT_TOP_DOWN_GENERATED_SEI_NAME" v="serviciosweb.ServicioEnfermedadSW"/>
+            </hash>
+         </list>
+         <url n="TARGET_PROJECT" path="../../ProyectoClienteHospitalSW.jpr"/>
+         <value n="WS_ORIG_GEN_DIRECTION" v="TOP_DOWN"/>
+         <value n="WS_TARGET_NAMESPACE" v="http://serviciosWeb/"/>
+         <value n="WS_URI" v="ServicioEnfermedadSW"/>
+         <url n="WS_WSDL_FILE" path="ServicioEnfermedadSW.wsdl"/>
+      </hash>
+      <value n="SERVICE_ASYNC" v="false"/>
+      <value n="USE_WSDL_LOCATION" v="true"/>
+   </hash>
+</jdevws:WebServiceProxy>
